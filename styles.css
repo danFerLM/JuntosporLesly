@@ -1,3 +1,4 @@
+/* Global Styles */
 * {
     margin: 0;
     padding: 0;
@@ -5,21 +6,32 @@
 }
 
 body {
-    font-family: Arial, sans-serif;
+    font-family: 'Poppins', sans-serif;
     line-height: 1.6;
+    background-color: #f4f4f4;
+    color: #333;
 }
 
 header {
     background-color: #4CAF50;
-    color: white;
-    padding: 1rem 0;
-    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 100;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 90%;
+    margin: auto;
 }
 
 nav ul {
     list-style: none;
     display: flex;
-    justify-content: center;
 }
 
 nav ul li {
@@ -27,120 +39,112 @@ nav ul li {
 }
 
 nav ul li a {
-    color: white;
+    color: #fff;
     text-decoration: none;
-    font-weight: bold;
+    font-weight: 600;
 }
 
 .hero {
     background: url('farm.jpg') no-repeat center center/cover;
-    color: white;
     height: 100vh;
     display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: center;
     text-align: center;
 }
 
-.hero h2 {
+.hero h1 {
     font-size: 3rem;
-    margin-bottom: 1rem;
+    color: #fff;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    color: #fff;
+    margin: 20px 0;
 }
 
 .btn {
+    padding: 10px 20px;
     background-color: #4CAF50;
     color: white;
-    padding: 10px 20px;
     text-decoration: none;
-    font-size: 1.2rem;
     border-radius: 5px;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s ease;
 }
 
 .btn:hover {
     background-color: #45a049;
 }
 
+.productos-section {
+    padding: 50px 0;
+    background-color: #fff;
+    text-align: center;
+}
+
 .productos-container {
     display: flex;
     justify-content: space-around;
-    margin: 2rem 0;
+    flex-wrap: wrap;
 }
 
 .producto {
-    background-color: #f4f4f4;
-    padding: 1rem;
-    text-align: center;
-    border-radius: 5px;
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    margin: 10px;
     width: 30%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    transition: transform 0.3s ease;
 }
 
 .producto img {
-    width: 100%;
-    height: auto;
-    border-radius: 5px;
+    max-width: 100%;
+    border-radius: 10px;
 }
 
-.producto h3 {
-    margin: 1rem 0;
+.producto:hover {
+    transform: translateY(-10px);
 }
 
-.btn-comprar {
-    background-color: #4CAF50;
-    color: white;
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.btn-comprar:hover {
-    background-color: #45a049;
-}
-
-#sobre-nosotros {
-    padding: 2rem;
-    background-color: #f9f9f9;
+.about-section, .contact-section {
+    padding: 50px 0;
+    background-color: #f4f4f4;
     text-align: center;
 }
 
-#contacto {
-    padding: 2rem;
-    text-align: center;
-}
-
-#contacto form {
+form {
     display: flex;
     flex-direction: column;
-    align-items: center;
+    max-width: 500px;
+    margin: 0 auto;
 }
 
-#contacto label, #contacto input, #contacto textarea {
-    margin-bottom: 1rem;
+form input, form textarea {
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 5px;
 }
 
-#contacto input, #contacto textarea {
-    width: 50%;
-    padding: 0.5rem;
-}
-
-.btn-enviar {
+form button {
+    padding: 10px;
     background-color: #4CAF50;
     color: white;
-    padding: 10px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
 }
 
-.btn-enviar:hover {
+form button:hover {
     background-color: #45a049;
 }
 
 footer {
-    background-color: #4CAF50;
+    background-color: #333;
     color: white;
     text-align: center;
-    padding: 1rem 0;
+    padding: 20px 0;
 }
+
