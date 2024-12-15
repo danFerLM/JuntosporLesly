@@ -34,20 +34,22 @@ h2 {
     text-align: center;
 }
 
-/* Lista de donaciones */
-#donation-methods ul {
-    list-style: none;
-    padding: 0;
+/* Listas */
+ul, ol {
+    padding-left: 20px;
 }
 
-#donation-methods li {
-    margin-bottom: 20px;
+li {
+    margin-bottom: 10px;
 }
 
-.qr-code {
-    max-width: 150px;
+/* Imagen del afiche */
+.raffle-poster {
     display: block;
-    margin: 10px auto;
+    max-width: 100%;
+    margin: 20px auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 /* Footer */
