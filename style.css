@@ -1,39 +1,47 @@
+/* Estilo general */
 body {
     font-family: Arial, sans-serif;
+    background-color: #fef6e4; /* Pastel cálido */
+    color: #333;
     margin: 0;
     padding: 0;
-    line-height: 1.6;
 }
 
+/* Header */
 header {
-    background: #f4f4f4;
     text-align: center;
     padding: 20px;
+    background-color: #ffe3e3; /* Rosa pastel */
 }
 
-header h1 {
-    color: #333;
+header .logo {
+    max-width: 150px;
+    margin: 0 auto;
 }
 
+/* Secciones */
 section {
-    margin: 20px;
+    margin: 20px auto;
     padding: 20px;
-    border: 1px solid #ccc;
     border-radius: 8px;
-    background: #f9f9f9;
+    max-width: 600px;
+    background-color: #fff7cd; /* Amarillo pastel */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 h2 {
-    color: #555;
+    color: #6b4226; /* Marrón suave */
+    text-align: center;
 }
 
-ul {
+/* Lista de donaciones */
+#donation-methods ul {
     list-style: none;
     padding: 0;
 }
 
-li {
-    margin: 10px 0;
+#donation-methods li {
+    margin-bottom: 20px;
 }
 
 .qr-code {
@@ -42,12 +50,10 @@ li {
     margin: 10px auto;
 }
 
+/* Footer */
 footer {
     text-align: center;
     padding: 10px;
-    background: #333;
-    color: #fff;
-    position: fixed;
-    bottom: 0;
-    width: 100%;
+    background-color: #b3e5fc; /* Azul pastel */
+    color: #333;
 }
